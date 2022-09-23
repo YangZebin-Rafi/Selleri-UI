@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import second from 'first'
+import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
   <div>
-    
+    <HelloWorld></HelloWorld>
   </div>
 </template>
 
