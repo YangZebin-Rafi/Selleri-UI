@@ -1,8 +1,26 @@
 {
-  "name": "myuidemo",
-  "private": true,
-  "version": "0.0.0",
+  "name": "selleri-ui",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/selleriui.es.ts",
+  "main": "./dist/selleriui.umd.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/selleriui.es.ts",
+      "require": "./dist/selleriui.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "keywords": [
+    "test"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -19,5 +37,16 @@
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vue-tsc": "^0.40.4"
-  }
+  },
+  "description": "## Selleri-UI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frank000000/Selleri-UI.git"
+  },
+  "author": "Rafi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frank000000/Selleri-UI/issues"
+  },
+  "homepage": "https://github.com/Frank000000/Selleri-UI#readme"
 }
