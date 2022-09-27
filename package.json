@@ -1,7 +1,7 @@
 {
   "name": "selleri-ui",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -19,7 +19,7 @@
     }
   },
   "keywords": [
-    "test"
+    "test","vue","vue3","pinia","ts","js","node","vite"
   ],
   "scripts": {
     "dev": "vite",

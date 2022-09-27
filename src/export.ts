@@ -1,2 +1,3 @@
 import TestComponent from '@/components/TestComponent.vue';
-export { TestComponent }
+import testStyle from '@/style.css'
+export { TestComponent,testStyle }

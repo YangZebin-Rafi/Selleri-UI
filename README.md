@@ -10,4 +10,4 @@
   - import 'selleri-ui/dist/style.css'
   - import {TestComponent} from 'selleri-ui' // the components you wanner to use
 
-3. <test-component></test-component> 
+3. `<test-component></test-component>`
