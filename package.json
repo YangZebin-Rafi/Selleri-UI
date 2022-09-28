@@ -1,7 +1,7 @@
 {
   "name": "selleri-ui",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
   "files": [
     "dist"
@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/Frank000000/Selleri-UI.git"
   },
-  "author": "Rafi",
+  "author": "Rafi Yang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Frank000000/Selleri-UI/issues"
