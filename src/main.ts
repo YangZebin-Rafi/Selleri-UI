@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
+// import './style.css'
 import App from './App.vue'
 import { createPinia } from 'pinia'
 // 下面是我们安装的固化插件。
