@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
-import TestComponent from '@/components/TestComponent.vue'
+import SButton from '@/components/SButton.vue'
 </script>
 
 <template>
   <div>
-    <HelloWorld></HelloWorld>
-    <TestComponent></TestComponent>
+    <!-- <HelloWorld></HelloWorld> -->
+    <SButton></SButton>
   </div>
 </template>
 
