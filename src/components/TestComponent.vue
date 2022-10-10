@@ -1,37 +1,75 @@
 <template>
-  <button class="testButtonClass" @click="consoleTest()">test-component</button>
+  <p>btn__primary</p>
+  <div class="btn btn__primary" @click="consoleTest()">
+    <p>Button</p>
+  </div>
+  <p>btn__secondary</p>
+  <div class="btn btn__secondary">
+    <p>Button</p>
+  </div>
+
 </template>
  
 <script setup lang="ts">
-// import '@/style.css'
+
 const consoleTest = () => {
   console.log('console TestComponent')
 }
 </script>
  
 <style scoped lang="scss">
-.testButtonClass {
-  background-color: darkmagenta;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
+$shadow: .3rem .3rem .6rem var(--greyLight-2),
+  -.2rem -.2rem .5rem var(--white);
+$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
+  inset -.2rem -.2rem .5rem var(--white);
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
+  transition: .3s ease;
 
-.testButtonClass:hover {
-  border-color: #646cff;
-}
+  &__primary {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background: var(--primary);
+    box-shadow: inset .2rem .2rem 1rem var(--primary-light),
+      inset -.2rem -.2rem 1rem var(--primary-dark),
+      $shadow;
+    color: var(--greyLight-1);
 
-.testButtonClass:focus,
-e {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+    &:hover {
+      color: var(--white);
+    }
 
-.testButtonClass:focus-visibl {
-  outline: 4px auto -webkit-focus-ring-color;
+    &:active {
+      box-shadow: inset .2rem .2rem 1rem var(--primary-dark),
+        inset -.2rem -.2rem 1rem var(--primary-light);
+    }
+  }
+
+  &__secondary {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    color: var(--greyDark);
+
+    &:hover {
+      color: var(--primary);
+    }
+
+    &:active {
+      box-shadow: $inner-shadow;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
 }
 </style>

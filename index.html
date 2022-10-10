@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Vue + TS</title>
+  <style>
+    :root {
+      --primary-light: #8abdff;
+      --primary: #6d5dfc;
+      --primary-dark: #5b0eeb;
+
+      --white: #FFFFFF;
+      --greyLight-1: #E4EBF5;
+      --greyLight-2: #c8d0e7;
+      --greyLight-3: #bec8e4;
+      --greyDark: #9baacf;
+    }
+
+    /* 1rem = 10px    100% = 16px */
+    html {
+      box-sizing: border-box;
+
+      font-size: 62.5%;
+      overflow-y: scroll;
+      background: var(--greyLight-1);
+
+      @media screen and (min-width: 900px) {
+        font-size: 75%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
