@@ -1,15 +1,40 @@
-# Vue 3 + TypeScript + Vite + pinia
+## Features
 
-## Selleri-UI
+- 🎒 Vue 3 
+- 🚀 Vite
+- 🚇 pinia
+- 🐟 TypeScript
 
-### explain
+## install
 
-1. npm install selleri-ui
+Using `npm` to install:
 
-2. main.ts(or the other files you want)
+```bash
+# install latest Vant for Vue 3 project
+npm install selleri-ui
+```
 
-    - import 'selleri-ui/dist/style.css'
+Using `yarn` or `pnpm`:
 
-    - import {TestComponent} from 'selleri-ui' // the components you wanner to use
+```bash
+# with yarn
+yarn add selleri-ui
 
-3. `<test-component></test-component>`
+# with pnpm
+pnpm add selleri-ui
+```
+
+## Quickstart
+
+```js
+import { createApp } from 'vue';
+// 1. Import the components you need
+import { Button } from 'selleri-ui';
+// 2. Import the components style
+import 'selleri-ui/dist/style.css';
+
+const app = createApp();
+
+// 3. Register the components you need
+app.use(Button);
+```
