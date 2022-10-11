@@ -29,12 +29,12 @@ pnpm add selleri-ui
 ```js
 import { createApp } from 'vue';
 // 1. Import the components you need
-import { Button } from 'selleri-ui';
+import { s_button } from 'selleri-ui';
 // 2. Import the components style
 import 'selleri-ui/dist/style.css';
 
 const app = createApp();
 
 // 3. Register the components you need
-app.use(Button);
+app.use(s_button);
 ```

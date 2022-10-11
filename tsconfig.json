@@ -27,7 +27,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-  ],
+, "packages/SButton.vue.ts"  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

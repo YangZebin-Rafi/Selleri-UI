@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
-import SButton from '@/components/SButton.vue'
+import s_button from '@/components/SButton.vue'
 </script>
 
 <template>
   <div>
     <!-- <HelloWorld></HelloWorld> -->
-    <SButton></SButton>
+    <s_button></s_button>
   </div>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+  @import '@/style.css'
 </style>
