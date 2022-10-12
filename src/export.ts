@@ -1,4 +1,4 @@
-import s_button from 'packages/SButton.vue';
+import s_button from './components/SButton.vue'
 import testStyle from '@/style.css'
 
 const components = [s_button];

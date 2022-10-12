@@ -12,7 +12,9 @@
  
 <script setup lang="ts">
 const consoleTest = () => {
-  console.log('console TestComponent')
+  // console.log('console TestComponent')
+  console.log(11111);
+  
 }
 </script>
  
