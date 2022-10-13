@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import { ref } from 'vue'
 import { useStore } from '@/store/index'
 let store = useStore()
@@ -30,4 +30,4 @@ const add = () => {
 
 <style scoped>
 
-</style> -->
+</style>
